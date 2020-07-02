@@ -1,0 +1,21 @@
+操作：
+(1)git log 爬取所有的提交记录，用python整理数据。
+(2)计算每个提交者的四个指标：amount，fix，bug，maintain。
+(3)Python画出散点图，线性回归拟合散点图，并计算每个提交者提交文件的的fix率，bug率，maintain率。
+(4)确定代码稳定性指标，确定fix率，bug率，maintain为多少时代码稳定。
+(5)将拟合后得出的fix率，bug率，maintain率与预先定义的指标比较，判断代码是否稳定。
+
+
+变量解释：
+amount：该提交者总共提交了多少记录
+fix：该作者提交的所有记录中有多少条包含”fix”字段
+bug:该作者提交的所有记录中有多少条包含”fix”字段
+maintain:该作者提交的所有记录中有多少条包含”fix”字段
+fix_rate：fix_rate=fix/amount
+bug_rate：bug_rate=bug/amount
+maintain_rate：maintain_rate=maintain/amount
+
+遇到的问题：
+（1）文件过大打开困难，代码运行时间长，占用大量计算机资源。
+（2）Python分割每个commit时寻找不到合适的切割点，最后用每个commit第二行必有的author为切割单元。
+
