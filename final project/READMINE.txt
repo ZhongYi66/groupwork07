@@ -1,0 +1,12 @@
+BECAUSE THE DATA txt FILE IS TOO BIG!!!
+WE CAN NOT UPLOAD THE FILE TO OUR REPOSITORY.
+SO HERE I WILL TALK ABOUT HOW WE GET THE DATA txt FILE. 
+
+Operation:
+1.open your git bash
+2.cd in your linux master root
+3.Please enter:"git log >> ~\Desktop\normal.txt"
+
+After the operation.IF you find there is a about 650 megabytes normal.txt file on your desktop.You succeed.Then you can successfully use the py file we uploaded.
+
+Thank you for downloading the files we failed to upload!
